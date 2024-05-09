@@ -1,0 +1,28 @@
+# 定位数据接收系统
+
+#### 简介
+
+​	本程序旨在测试在不依赖开发框架的情况下，使用 `CMake` 系统，开发一个可以在后台接收数据的系统程序，包括异步的数据接收、循环日志、加密库等功能，作为对船上实时回传的定位数据的处理程序的后备程序。
+
+#### 安装 crypto++ 库
+
+sudo apt install libcrypto++-dev
+
+#### 安装 mysql 库
+
+sudo apt-get install libmysqlclient-dev
+
+#### 安装 Hp-Socket 库
+
+下载 hp-socket 源码，进入 Linux 文件夹下的 Script 文件夹，修改 compile.sh 配置，运行
+
+#### 查看 so 库是否存在 debug 信息
+
+readelf -S libxxx.so | grep debug
+
+#### 安装 spdlog 库
+
+sudo apt install libspdlog-dev
+
+
+

@@ -1,2 +1,28 @@
-# NetworkServerTemplate
-NetworkServerTemplate
+# 定位数据接收系统
+
+#### 一、简介
+
+​		本程序旨在测试在不依赖开发框架的情况下，使用 `CMake` 系统，开发一个可以在后台接收数据的系统程序，包括异步的数据接收、循环日志、加密库、配置文件等功能，作为对船上实时回传的定位数据的处理程序的后备程序。
+
+#### 二、编译&运行
+
+​		在源码目录新建一个 `build` 文件夹，将 `script` 文件中的所有文件拷贝到 `build` 文件夹中；在 `build` 文件夹中打开终端，运行以下命令：
+
+```shell
+// 编译
+cmake ../
+make -j4
+
+// 权限
+sudo chmod 777 ./*.sh
+
+// 配置及初始化
+./copy.sh
+./init.sh
+
+// 运行
+./startup.sh
+
+// 关闭
+./shutdown.sh
+```
